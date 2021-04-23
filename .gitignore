@@ -67,5 +67,7 @@
 .phpunit
 .phpunit.result.cache
 /phpunit.xml
+
+/.idea
 ###< symfony/phpunit-bridge ###
 >>>>>>> Add initial set of files
