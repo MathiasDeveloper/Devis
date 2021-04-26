@@ -30,6 +30,7 @@
 !bin/console
 !bin/symfony_requirements
 /vendor/
+/node_modules/
 
 # Assets and user uploads
 /web/bundles/
@@ -58,14 +59,25 @@
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
+
+###> Build app ###
+/public/build/
+
 /var/
-/vendor/
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
 .phpunit
 .phpunit.result.cache
-/phpunit.xml
 
 /.idea
 ###< symfony/phpunit-bridge ###
+
+###> symfony/webpack-encore-bundle ###
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
+
+/yarn.lock
+/symfony.lock
+/composer.lock
