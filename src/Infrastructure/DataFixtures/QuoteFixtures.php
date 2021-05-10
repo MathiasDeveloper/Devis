@@ -17,8 +17,9 @@ class QuoteFixtures extends Fixture
         for($i = 0; $i < 10; $i++){
             $quotes[$i] = new Quote();
             $quotes[$i]->setName($faker->word());
-            $quotes[$i]->setDate($faker->date('d-m-Y'));
+            $quotes[$i]->setDate($faker->dateTime('now'));
             $customer = new Customer();
+            $customer->setName($faker->lastName . ' ' . $faker->firstName);
             $quotes[$i]->setCustomer($customer);
             $manager->persist($quotes[$i]);
         }
